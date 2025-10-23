@@ -1,0 +1,344 @@
+/* Reset e base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(to right, #8dc26f, #76b852);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+}
+
+/* Navegação sticky */
+nav {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a,
+nav button {
+  color: #4b4b4b;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  font-family: inherit;
+}
+
+nav a:hover,
+nav button:hover,
+nav a.active {
+  color: #76b852;
+  text-decoration: underline;
+}
+
+/* Hero para a página index */
+.hero-index {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hero-index::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+.hero-index > div {
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Hero para a página feira */
+.hero-feira {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/32507713/pexels-photo-32507713.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero-feira::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.hero-feira > div {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Hero para a página cultura */
+.hero-cultura {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/9211779/pexels-photo-9211779.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero-cultura::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.hero-cultura > div {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Hero para a página gastronomia */
+.hero-gastronomia {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/8775197/pexels-photo-8775197.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero-gastronomia::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.hero-gastronomia > div {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Hero para a página palestras */
+.hero-palestras {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/2678468/pexels-photo-2678468.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero-palestras::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.hero-palestras > div {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Seções */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: #76b852;
+}
+
+section ul {
+  padding-left: 1.5rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Grid geral */
+.grid {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.grid > div {
+  flex: 1;
+}
+
+/* Ajuste da imagem para preencher altura do container e manter proporção */
+.grid img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: block;
+  max-width: 100%;
+}
+
+/* Cards com animação */
+.card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card h3 a {
+  color: #76b852;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card h3 a:hover,
+.card h3 a:focus {
+  color: #5a9442;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Imagem na seção Sobre */
+#sobre .grid {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+#sobre .grid > div {
+  flex: 1;
+}
+
+#sobre img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: block;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+/* Botão Voltar ao Topo */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #76b852;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1100;
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #5a9442;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+
+  .hero-index {
+    height: 40vh;
+    font-size: 1.5rem;
+  }
+  
+  .hero-feira {
+    height: 30vh;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
